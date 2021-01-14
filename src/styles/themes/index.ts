@@ -4,11 +4,12 @@ export const LightTheme: ThemeTypes = {
   title: 'Light',
   colors: {
     themeColors: {
-      primary: '#34CB79',
+      primary: '#FF4400',
       secondary: '#FFF',
-      tertiary: '#F0F0F5',
+      tertiary: '#ccc',
+      background: "#fff",
 
-      text: '#6C6C80'
+      text: '#222'
     },
 
     white: '#f7f7f7',
@@ -29,9 +30,10 @@ export const DarkTheme: ThemeTypes = {
   title: 'Dark',
   colors: {
     themeColors: {
-      primary: '#34CB79',
+      primary: '#FF4400',
       secondary: '#1C2028',
       tertiary: '#2B303A',
+      background: "#1C2028",
 
       text: '#6C6C80'
     },

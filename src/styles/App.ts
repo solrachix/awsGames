@@ -8,7 +8,7 @@ export const Container = styled.div`
   /* max-width: 1100px; */
   margin: 0 auto;
   /* padding: 0 30px; */
-  background: ${({ theme }) => theme.colors.themeColors.secondary};
+  /* background: ${({ theme }) => theme.colors.themeColors.secondary}; */
   display: flex;
   flex-direction: column;
   align-items: center;

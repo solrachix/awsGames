@@ -8,13 +8,17 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "eslint": "6.6.0",
+    "keen-slider": "^5.3.5",
     "polished": "^3.6.5",
+    "qier-player": "^1.2.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "video.js": "^7.10.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
+    "@types/video.js": "^7.3.11"
   }
 }

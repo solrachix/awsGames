@@ -7,6 +7,7 @@ export type ThemeTypes = {
       primary: string,
       secondary: string,
       tertiary: string,
+      background: string,
       text: string,
     }
 
