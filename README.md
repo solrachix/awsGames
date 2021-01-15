@@ -23,12 +23,11 @@
 </p>
 
 > :rocket: Project for studies
->
-<p align="center">
-<a href="https://github.com/solrachix/Proffy/tree/master/packages/web">
-	<img src="https://img.shields.io/badge/WEB-FF4400?logo=typescript&logoColor=B12120&label=awsGames&labelColor=FF4400&style=for-the-badge" />
-</a>
 
+<p align="center">
+  <a href="https://github.com/solrachix/Proffy/tree/master/packages/web">
+    <img src="https://img.shields.io/badge/WEB-FF4400?logo=typescript&logoColor=B12120&label=awsGames&labelColor=FF4400&style=for-the-badge" />
+  </a>
 </p>
 
 <p align="center">
