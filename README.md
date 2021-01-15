@@ -31,14 +31,15 @@
 
 </p>
 
-<div align="center">
+<p align="center">
+	<img src="https://github.com/solrachix/awsGames/blob/master/.github/Screen.png?raw=true" />
   <sub>Project for studies. Built with ❤︎ by
     <a href="https://github.com/solrachix">Carlos Miguel</a> and
     <a href="https://github.com/solrachix/awsGames/graphs/contributors">
       contributors
     </a>
   </sub>
-</div>
+</p>
 
 # :pushpin: Table of Contents
 
