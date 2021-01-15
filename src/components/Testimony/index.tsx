@@ -52,6 +52,11 @@ const Testimony: React.FC<Props> = ({ testimonies }) => {
                     <Text className="title" size={1} weight={700}>
                       {testimony.title}
                     </Text>
+                    <div className="comprar">
+                      R$ 279,00
+
+                      <button>Levar agora</button>
+                    </div>
                   </div> 
                   {/* <QierPlayer
                       width={640}
@@ -74,7 +79,7 @@ const Testimony: React.FC<Props> = ({ testimonies }) => {
 
         </div>
       </div>
-        <div className="b">
+      <div className="b">
         <div className="changeSlide">
           {slider && (
             <>
@@ -116,7 +121,7 @@ const Testimony: React.FC<Props> = ({ testimonies }) => {
             </>
           )}
         </div>
-        </div>
+      </div>
     </Container>
   )
 }

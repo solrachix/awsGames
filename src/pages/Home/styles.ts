@@ -24,6 +24,7 @@ export const Container = styled.div`
     display: grid;
     justify-content: flex-start;
     align-items: flex-start;
+    row-gap: 1rem;
   }
 
   & > section:nth-of-type(1) {

@@ -70,13 +70,13 @@ export const Container = styled.section`
 						max-width: 328px;
 					}
 
-					&:after {
+					&:before {
 						content: "";
 						position: absolute;
 						width: 1.8rem;
 						height: .2rem;
 						margin-left: 0.2%;
-						margin-top: -13.5%;
+						/* margin-top: -16.5%; */
 
 						background: ${props => props.theme.colors.themeColors.primary};
 						border-radius: 50px;
@@ -92,6 +92,30 @@ export const Container = styled.section`
 							display: block;
 						}
 					}
+
+          .comprar {
+            width: 80%;
+            margin: auto;
+            margin-top: 4rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: .8rem;
+            font-weight: 900;
+
+            button {
+              width: 100px;
+              height: 2rem;
+
+						  background: ${props => props.theme.colors.themeColors.text};
+              color: ${props => props.theme.colors.themeColors.background};
+              border: none;
+              border-radius: 2rem;
+              outline: none;
+            }
+          }
 				}
 
 			}
