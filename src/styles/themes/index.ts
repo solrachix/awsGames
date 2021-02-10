@@ -4,7 +4,7 @@ export const LightTheme: ThemeTypes = {
   title: 'Light',
   colors: {
     themeColors: {
-      primary: '#FF4400',
+      primary: '#1e0f46',
       secondary: '#FFF',
       tertiary: '#ccc',
       background: "#fff",
@@ -17,11 +17,11 @@ export const LightTheme: ThemeTypes = {
     opaque: '#41414D',
     purple: '#6633cc',
     purpleDark: '#5A4B81',
-    green: '#67e480',
+    green: '#2fda51',
     orange: '#E89E64',
     pink: '#FF79C6',
     blue: '#4347FE', /** #5659eb */
-    red: '#E96379',
+    red: '#e61919',
     yellow: '#e7de79'
   }
 }
@@ -30,7 +30,7 @@ export const DarkTheme: ThemeTypes = {
   title: 'Dark',
   colors: {
     themeColors: {
-      primary: '#FF4400',
+      primary: '#1e0f46',
       secondary: '#1C2028',
       tertiary: '#2B303A',
       background: "#1C2028",
@@ -46,7 +46,7 @@ export const DarkTheme: ThemeTypes = {
     orange: '#E89E64',
     pink: '#FF79C6',
     blue: '#4347FE', /** #5659eb */
-    red: '#E96379',
+    red: '#ff3057',
     yellow: '#e7de79'
   }
 }

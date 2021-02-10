@@ -7,19 +7,25 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  html, body, #root {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
   body {
+    overflow-x: hidden;
     background: ${({ theme }) => theme.colors.themeColors.background};
     -webkit-font-smoothing: antialiased;
     color: ${({ theme }) => theme.colors.themeColors.text};
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto',sans-serif;
   }
   body, input, button, select {
     outline: none;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', 'Roboto',Arial, Helvetica, sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
     color: ${({ theme }) => theme.colors.themeColors.text};
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
   }
   input {
       outline: none;

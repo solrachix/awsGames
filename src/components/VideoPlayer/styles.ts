@@ -14,6 +14,11 @@ export const Container = styled.div`
     https://codepen.io/heff/pen/EarCt/left/?editors=010
     */
     
+    video, .vjs-poster, .video-js {
+        width: 80vw;
+        height: 46vw;
+    }
+
     .video-js {
      /* O tamanho da fonte básica controla o tamanho de tudo, não apenas do texto.
         Todas as dimensões usam tamanhos baseados em em para que a escala junto com o tamanho da fonte.
@@ -29,6 +34,11 @@ export const Container = styled.div`
     .vjs-icon-placeholder:before{
         font-size: 2.8rem;
         top: 17%!important;
+    }
+    .vjs-button > .vjs-icon-placeholder:before {
+        font-size: 1.8em;
+        line-height: 1.67;
+        top: 0%!important;
     }
 
     /* O "Botão Big Play" é o botão de reprodução que aparece antes da reprodução do vídeo.
@@ -54,8 +64,11 @@ export const Container = styled.div`
         /* 0.3em = 9px default */
         border-radius: .5em;
         /* Align top left. 0.5em = 15px default */
-        left: 0.6em;
-        top: 40%;
+        /* left: 0.6em; */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
     }
 
     /* A cor padrão dos fundos de controle é principalmente preto, mas com um pouco

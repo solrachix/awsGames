@@ -18,13 +18,18 @@ interface StyledProps{
 const Text = styled.p<StyledProps>`
   width: auto;
   max-width: 100%;
-  font-family: Roboto, sans-serif !important;
+  font-style: oblique;
+  font-family: 'Montserrat', 'Roboto', sans-serif !important;
   text-align: ${({ align }) => align};
   font-size: ${({ size }) => size}em;
   font-weight: ${({ weight }) => weight};
   color: ${({ color }) => color};
   margin: 0;
   word-break: break-word;
+  i {
+    text-decoration: line-through;
+    color: ${({ theme: { colors } }) => colors.red};
+  }
   strong {
     color: ${({ theme: { colors } }) => colors.themeColors.primary};
   }

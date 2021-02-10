@@ -6,8 +6,8 @@ import { Container } from './styles'
 
 interface Props {
   videoJsOptions: VideoJsPlayerOptions;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   poster: string;
 }
 const VideoPlayer: React.FC<Props> = ({ videoJsOptions, width = 720, height = 440, poster}) => {
@@ -31,13 +31,13 @@ const VideoPlayer: React.FC<Props> = ({ videoJsOptions, width = 720, height = 44
   }, [])
 
   return (
-    <Container>	
+    <Container className="video_player">	
       {/* <div data-vjs-player> */}
         <video ref={videoRef} 
         id="my_video_1" 
         className="video-js vjs-default-skin" 
         preload="none"
-        {...{width, height, poster}}
+        {...{ poster}}
       ></video>
       {/* </div> */}
     </Container>
