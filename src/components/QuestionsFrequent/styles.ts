@@ -9,11 +9,15 @@ export const Container = styled.section`
   margin: 100px auto;
   overflow: hidden;
 
-  .title {
+  .QuestionTitle {
     font-size: 48px;
     line-height: 64px;
-    font-weight: bold;
-    margin-bottom: 80px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+
+    b {
+      font-weight: 900;
+    }
   }
   .button {
     margin-top: 60px;
@@ -23,20 +27,19 @@ export const Container = styled.section`
     float: right;
   }
 
-  @media(max-width: 400px) {
-    padding: 0px!important;
+  @media (max-width: 400px) {
+    padding: 0px !important;
 
-    .title {
+    .QuestionTitle {
       font-size: 48px;
       line-height: 40px;
     }
   }
-
 `
 
 export const Question = styled.div`
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   button {
     display: flex;
     align-items: center;
@@ -47,19 +50,21 @@ export const Question = styled.div`
     @media (max-width: 960px) {
       font-size: 16px;
     }
-    background-color: ${props => darken(0.08, props.theme.colors.themeColors.primary)};
+    background-color: ${props =>
+      darken(0.08, props.theme.colors.themeColors.primary)};
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    user-select: none; 
+    user-select: none;
     transition: all 200ms;
-    
+
     p strong {
       color: ${props => lighten(0.1, props.theme.colors.themeColors.primary)};
     }
-    
+
     .span {
-      color: ${props => darken(0.06, props.theme.colors.themeColors.background)};
+      color: ${props =>
+        darken(0.06, props.theme.colors.themeColors.background)};
     }
     .question {
       color: ${props => props.theme.colors.themeColors.background};
@@ -70,7 +75,8 @@ export const Question = styled.div`
       width: 30px;
       height: 30px;
       border-radius: 15px;
-      border: 2px solid ${props => lighten(0.1, props.theme.colors.themeColors.primary)};
+      border: 2px solid
+        ${props => lighten(0.1, props.theme.colors.themeColors.primary)};
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,29 +85,28 @@ export const Question = styled.div`
       }
     }
   }
-  .response{
+  .response {
     display: none;
     padding: 20px 10%;
     font-size: 16px;
     line-height: 30px;
-    background-color:  ${props => props.theme.colors.themeColors.background};
-    color:  ${props => rgba(props.theme.colors.themeColors.text, 0.8)};
+    background-color: ${props => props.theme.colors.themeColors.background};
+    color: ${props => rgba(props.theme.colors.themeColors.text, 0.8)};
     border-radius: 0 0 5px 5px;
   }
   &.selected {
-    .response{
+    .response {
       display: block;
     }
   }
 
-  @media(max-width: 400px) {
+  @media (max-width: 400px) {
     button {
       padding: 0.6rem 1rem;
 
       .question {
         margin: 0 1rem;
       }
-
     }
   }
 `

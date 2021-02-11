@@ -7,8 +7,8 @@ import { Container, Question } from './styles'
 
 interface Props {
   questionsFrequent: {
-    question: string;
-    response: string;
+    question: string
+    response: string
   }[]
 }
 
@@ -28,35 +28,43 @@ const QuestionsFrequent: React.FC<Props> = ({ questionsFrequent }) => {
   return (
     <Container>
       <Text
-        className="title"
-        size={2.7}
+        className="QuestionTitle"
+        size={3}
         weight={900}
         color="#fff"
         align="center"
-      >Duvidas<br/><b>mais frequentes</b></Text>
+      >
+        Perguntas
+        <br />
+        <b>frequentes</b>
+      </Text>
 
-      {
-        questionsFrequent.map((question, index) => (
+      {questionsFrequent.map((question, index) => (
+        <Question
+          key={index}
+          className={selectedItems.includes(index) ? 'selected' : ''}
+          onClick={() => handleSelectItem(index)}
+        >
+          <button>
+            <Text className="span" size={1} weight={700}>
+              <strong>{index < 10 ? `0${index}` : index}.</strong>
+            </Text>
+            <Text className="question" size={1} weight={700}>
+              {question.question}
+            </Text>
 
-          <Question key={index}
-            className={selectedItems.includes(index) ? 'selected' : ''}
-            onClick={() => handleSelectItem(index)}
-          >
-            <button>
-              <Text className="span" size={1} weight={700} ><strong>{index < 10 ? `0${index}` : index}.</strong></Text>
-              <Text className="question" size={1} weight={700} >{question.question}</Text>
-
-              <div className="icon">
-                { selectedItems.includes(index) ? <FiMinus size={16} /> : <FiPlus size={16} /> }
-              </div>
-            </button>
-
-            <div className="response">
-              {question.response}
+            <div className="icon">
+              {selectedItems.includes(index) ? (
+                <FiMinus size={16} />
+              ) : (
+                <FiPlus size={16} />
+              )}
             </div>
-          </Question>
-        ))
-      }
+          </button>
+
+          <div className="response">{question.response}</div>
+        </Question>
+      ))}
 
       {/* <Button>
         Quero garantir minha vaga

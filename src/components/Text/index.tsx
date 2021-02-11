@@ -26,6 +26,9 @@ const Text = styled.p<StyledProps>`
   color: ${({ color }) => color};
   margin: 0;
   word-break: break-word;
+  b {
+    color: ${({ theme: { colors } }) => colors.green};
+  }
   i {
     text-decoration: line-through;
     color: ${({ theme: { colors } }) => colors.red};

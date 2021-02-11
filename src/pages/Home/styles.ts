@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import { rgba } from 'polished'
 
 export const Container = styled.div`
@@ -6,7 +6,6 @@ export const Container = styled.div`
   max-width: 100vw;
   height: 100vh;
   flex: 1;
-
 
   /* display: grid;
   grid-template-columns: 84vw 16vw;
@@ -26,7 +25,8 @@ export const Container = styled.div`
     width: 100%;
     height: fit-content;
     padding: 0.5rem 0.5em;
-    
+
+    font-size: 2.4vw;
     font-weight: 700;
 
     background: ${props => props.theme.colors.green};
@@ -54,12 +54,16 @@ export const Container = styled.div`
     }
 
     &.primary {
-      background: ${props => props.theme.colors.themeColors.primary}
+      background: ${props => props.theme.colors.themeColors.primary};
     }
 
-
     .title {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      & + p {
+        font-style: italic;
+        margin-bottom: 2rem;
+      }
     }
 
     .button {
@@ -79,20 +83,6 @@ export const Container = styled.div`
 
       img {
         width: 10rem;
-      }
-    }
-
-    .depositions {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      column-gap: 2rem;
-      row-gap: 2rem;
-
-      img {
-        width: 16rem;
       }
     }
 
@@ -143,15 +133,114 @@ export const Container = styled.div`
     .purchase {
       width: 80%;
       height: fit-content;
-      padding: 2rem;
+      /* padding: 2rem; */
 
       border-radius: 20px;
       background: ${props => props.theme.colors.themeColors.background};
-      box-shadow: 0px 0px 20px ${props => props.theme.colors.themeColors.background};
+      /* box-shadow: 0px 0px 20px
+        ${props => props.theme.colors.themeColors.background}; */
 
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      img {
+        width: 50%;
+      }
+
+      div:nth-of-type(2) {
+        width: 100%;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      div:nth-of-type(1) {
+        width: 100%;
+        height: fit-content;
+        padding: 1.4rem;
+
+        background: ${props => props.theme.colors.blue};
+        border-radius: 20px 20px 0px 0px;
+
+        & + br + div p b {
+          font-size: 4rem;
+          color: ${props => props.theme.colors.blue};
+        }
+        p {
+          strong {
+            color: ${props => props.theme.colors.themeColors.text};
+          }
+          i {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    .whatCanYouWin {
+      margin-bottom: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .description {
+        height: fit-content;
+        min-height: 2rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+
+        display: flex;
+        align-items: center;
+
+        &:before {
+          position: absolute;
+          content: '';
+          width: 4px;
+          height: 2rem;
+          margin-left: -1rem;
+
+          background: ${props => props.theme.colors.themeColors.primary};
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 2rem;
+      }
+
+      > div {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1.6rem;
+
+        b {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        svg {
+          width: 2.8rem;
+          height: 2.8rem;
+          margin-bottom: 0.6rem;
+
+          color: ${props => props.theme.colors.themeColors.primary};
+        }
+      }
     }
 
     .warranty {
@@ -199,7 +288,7 @@ export const Container = styled.div`
     }
   } */
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     /* background: red; */
     max-width: 100%;
 
@@ -233,10 +322,22 @@ export const Container = styled.div`
             font-size: 1.6rem;
             text-align: center;
           }
+          & > div {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            button {
+              width: 100%;
+              margin: 5% auto;
+            }
+          }
         }
       }
 
-      .warranty{
+      .warranty {
         width: 100%;
         max-width: 900px;
         margin-top: 20%;
@@ -252,22 +353,21 @@ export const Container = styled.div`
           height: 60%;
         }
         /* div { */
-          p {
-            margin: auto;
-            width: 80%;
+        p {
+          margin: auto;
+          width: 80%;
 
-            &:nth-last-of-type() {
-              font-size: 1.6rem;
-            }
+          &:nth-last-of-type() {
+            font-size: 1.6rem;
           }
-
+        }
 
         /* } */
       }
     }
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     /* background: red; */
     max-width: 100%;
 
@@ -278,12 +378,14 @@ export const Container = styled.div`
         /* min-height: 100vh; */
         padding: 30px 10px;
 
-        video, .vjs-poster, .video-js {
+        video,
+        .vjs-poster,
+        .video-js {
           width: 90vw;
           height: 50vw;
         }
 
-        .button {          
+        .button {
           width: 96%;
         }
 
@@ -299,7 +401,6 @@ export const Container = styled.div`
 
       .title {
         font-size: 1.8rem;
-        margin-bottom: 4rem;
       }
 
       .button {
@@ -333,24 +434,6 @@ export const Container = styled.div`
         }
       }
 
-      .depositions {
-        width: 110%;
-        margin: 20px 0px; 
-        column-gap: 1rem;
-        row-gap: 20px;
-
-        p:nth-of-type(1) {
-          font-size: 1.4rem;
-        }
-        p:nth-of-type(2) {
-          font-size: 1.2rem;
-        }
-        img {
-          width: 10rem;
-          /* width: 16rem; */
-        }
-      }
-
       &.mediasSection {
         text-align: center;
         /* display: flex; */
@@ -361,7 +444,7 @@ export const Container = styled.div`
         .medias {
           /* width: 100%; */
           margin: 20px auto;
-          
+
           justify-content: space-between;
           row-gap: 2rem;
           /* flex-direction: column; */
@@ -374,23 +457,26 @@ export const Container = styled.div`
 
       .purchase {
         width: 110%;
-        padding: 1rem;
+        div:nth-of-type(2) {
+          padding: 1rem;
+        }
+        /* padding: 1rem; */
 
         img {
-          width: 50%;
+          width: 100%;
         }
 
-        .pagamento + p {
+        /* .pagamento + p {
           font-size: 1rem;
         }
 
         p {
           font-size: 1.4rem;
         }
-        
+
         p:nth-of-type(1) {
           font-size: 2rem;
-        }
+        } */
       }
 
       .warranty {
@@ -410,8 +496,7 @@ export const Container = styled.div`
             font-size: 1.6rem;
           }
         }
-
       }
     }
   }
-`;
+`
