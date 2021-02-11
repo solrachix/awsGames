@@ -14,6 +14,14 @@ export const Container = styled.div`
   justify-content: flex-start; */
   /* align-items: flex-start; */
 
+  .react-reveal {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .message {
     width: 100%;
     height: fit-content;
@@ -117,8 +125,17 @@ export const Container = styled.div`
           width: 100%;
           height: 600px;
         }
-        p {
+        & > div {
           width: 80%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          button {
+            width: 80%;
+            margin: 5% auto;
+          }
         }
       }
     }
@@ -140,18 +157,19 @@ export const Container = styled.div`
     .warranty {
       width: 100%;
       max-width: 900px;
-      margin-top: 20%;
+      margin-top: 10%;
 
-      display: grid;
-      grid-template-columns: 36vw 60vw;
-      /* grid-template-rows: 100%;
-      justify-content: flex-start;
-      align-items: flex-start; */
-      column-gap: 6vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      row-gap: 6vw;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: 32%;
+        height: 32%;
+        margin-bottom: -10%;
 
         /* height: 600px; */
       }
@@ -233,7 +251,7 @@ export const Container = styled.div`
           width: 60%;
           height: 60%;
         }
-        div {
+        /* div { */
           p {
             margin: auto;
             width: 80%;
@@ -244,7 +262,7 @@ export const Container = styled.div`
           }
 
 
-        }
+        /* } */
       }
     }
   }
@@ -358,6 +376,10 @@ export const Container = styled.div`
         width: 110%;
         padding: 1rem;
 
+        img {
+          width: 50%;
+        }
+
         .pagamento + p {
           font-size: 1rem;
         }
@@ -372,36 +394,23 @@ export const Container = styled.div`
       }
 
       .warranty {
-        width: 100%;
-        max-width: 900px;
-        margin-top: 20%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        row-gap: 6vw;
-
         img {
           width: 80%;
           height: 80%;
         }
-        div {
-          p {
-            margin: auto;
-            width: 100%;
+        p {
+          width: 100%;
+          margin: auto;
 
-            &:nth-of-type(1) {
-              font-size: 2rem;
-            }
-
-            &:nth-last-of-type() {
-              font-size: 1.6rem;
-            }
+          &:nth-of-type(1) {
+            font-size: 2rem;
           }
 
-
+          &:nth-last-of-type() {
+            font-size: 1.6rem;
+          }
         }
+
       }
     }
   }

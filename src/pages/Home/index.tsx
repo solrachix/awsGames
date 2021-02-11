@@ -1,4 +1,5 @@
 import React from 'react'
+import Slide from 'react-reveal/Slide'
 import { useTheme } from 'styled-components';
 
 import VideoPlayer from '../../components/VideoPlayer'
@@ -116,12 +117,12 @@ const Home: React.FC = () => {
         <br />
         <br />
         <Button themeColor="light">
-          SIM, QUERO COMPRAR AGORA
+          SIM! QUERO COMPRAR AGORA!
         </Button>
         <br />
         <img className="pagamento" src="https://guiascoremaximo.com/wp-content/uploads/2020/12/compra-segura-meiospagamento.png" />
-        <br />
-        <Text className="compraSegura" size={.8} weight={400} color="#fff" align="center">Compra segura/políticas de privacidade.</Text>
+        {/* <br />
+        <Text className="compraSegura" size={.8} weight={400} color="#fff" align="center">Compra segura/políticas de privacidade.</Text> */}
         <br />
         <br />
       </section>
@@ -131,56 +132,79 @@ const Home: React.FC = () => {
 
       <section className="ebookSection">
         <div className="ourEbook">
-          <img 
-            src="https://guiascoremaximo.com/wp-content/uploads/2020/12/ScoreMaximo-Mockup.png" 
-            alt="Ebook Image" 
-          />
-          <Text size={1.2}>
-            O <b>( Produto X)</b> é um metodo detalhado criado por grandes expecialistas do mercado financeiro, especializado em análise de crédito de grandes bancos, e que vai te ajudar a aumentar o seu score e nunca mais ter problemas com falta de credito.
-            <br />
-            <br />
-            <b>Seguindo esse metodo, passo a passo você consiguirá sair de qualquer pontuação baixa e ter um score confiavel acima de 700 pontos</b>, o sulficiente para poder ter o credito que precisar
-            nos principais bancos do brasil, para fazer o que desejar, como ter cartão de crédito, financiar um imóvel, um carro etc.
-            <br />
-            <br />
-            Mas ele <b>( Produto X)</b> não revela só como você ter um score alto,
-            como também mostra exatamente o que fazer para nunca mais ter qualquer pedido de crédito negado.
-            <br />
-            <br />
-            <b>
-              E além desse metodo, você receberá alguns bonús Exclusivos, que irão te ajudar de vez a nunca mais ter problemas com creditos, e garantir que ocê realize seus objetivos e sonhos.
-            </b>
-          </Text>
+          <Slide left>
+            <img 
+              src="https://guiascoremaximo.com/wp-content/uploads/2020/12/ScoreMaximo-Mockup.png" 
+              alt="Ebook Image" 
+            />
+          </Slide>
+          <div>
+            <Slide right>
+              <Text size={1.2}>
+                <b>O Segredo do Score Alto é uma passo a passo 
+                de tudo que você precisa saber</b> para aumentar seu 
+                score. Diferente de tudo que você já viu, o nosso 
+                método que é 100% comprovado e garantido e foi desenvolvido 
+                por um dos melhores analistas de crédito de grandes bancos para 
+                te mostrar todo caminho para aumentar seu score e poder ter o crédito 
+                que sempre sonhou.
+                <br />
+                <br />
+                <b>O único método que você precisa seguir </b> 
+                para sair de um score negativo para 
+                um score positivo e conseguir o crédito que precisa
+                para fazer o que desejar, como : Ter um cartão de crédito com um limite 
+                que você precisa realmente, financiar um imóvel, um carro ou outro bem que você
+                tanto sonha.
+                <br />
+                <br />
+                e, além do nosso e-book segredos do score alto, você ainda vai receber junto mais 3
+                bônus extras que vão te auxiliar de uma vez por todas a ter um score melhor e garantir 
+                que todos os seus objetivos se tornem realidade.
+
+              </Text>
+            </Slide>
+            <Slide right>
+              <Button>
+                QUERO AUMENTAR MEU SCORE AGORA
+              </Button>
+            </Slide>
+          </div>
         </div>
-      </section>
-      
-      <section>
-        <Button>
-          QUERO AUMENTAR MEU SCORE AGORA
-        </Button>
       </section>
 
       <section className="primary">
-        <Text 
-        className="title"
-          size={2.6}
-          weight={900}
-          color="#fff"
-          align="center"
-        >Veja abaixo avaliação de quem comprou, quem compra aprova</Text>
+        <Slide left>
+          <Text 
+          className="title"
+            size={2.6}
+            weight={900}
+            color="#fff"
+            align="center"
+          >VEJA O QUE AS PESSOAS ESTÃO FALANDO SOBRE O SEGREDO DO SCORE ALTO 2.0...</Text>
+        </Slide>
 
-        <div className="depositions">
-          {
-            depositions.map((props, index) => (
-              <img src={props.src} alt="Deposition"/>
-            ))
-          }
-        </div>
+        <Slide bottom>
+          <div className="depositions">
+            {
+              depositions.map((props, index) => (
+                <img src={props.src} alt="Deposition"/>
+              ))
+            }
+          </div>
+        </Slide>
+        <br />
+        <br />
+        <Slide left>
+          <Button>
+            QUERO AUMENTAR MEU SCORE AGORA
+          </Button>
+        </Slide>
         <br />
         <br />
       </section>
 
-      <section className="mediasSection">
+      {/* <section className="mediasSection">
         <Text
           size={3}
           weight={900}
@@ -204,15 +228,17 @@ const Home: React.FC = () => {
         <Button>
           QUERO AUMENTAR MEU SCORE AGORA
         </Button>
-       </section>
+       </section> */}
 
       <section>
-        <Text
-          size={3}
-          weight={900}
-          color={theme.primary}
-          align="center"
-        >Bônus exclusivos que você terá acesso</Text>
+        <Slide left>
+          <Text
+            size={3}
+            weight={900}
+            color={theme.primary}
+            align="center"
+          >Bônus exclusivos que você terá acesso</Text>
+        </Slide>
         <br />
         <br />
         <div className="depositions">
@@ -236,86 +262,99 @@ const Home: React.FC = () => {
     
       <section className="primary">
         <br />
-        <div className="purchase">
-          <Text
-            size={2}
-            weight={900}
-            color={theme.text}
-            align="center"
-          >
-            Única oportunidade de ter acesso ao PRODUTO X
-          </Text>
-          <br />
-          <br />
-
-          <Text
-            size={2}
-            weight={700}
-            color={theme.text}
-            align="center"
-          >
-            <i>R$ 197,00</i> SOMENTE HOJE POR APENAS
-          </Text>
-          <Text
-            size={2.8}
-            weight={900}
-            color={theme.text}
-            align="center"
-          >
-            <strong>9x</strong> de <strong>R$ 8,88</strong>
-          </Text>
-
-          <Text
-            size={2.8}
-            weight={900}
-            color={theme.text}
-            align="center"
-          >
-            ou <strong>R$ 79,90</strong>
-          </Text>
-          <Text
-            size={2}
-            weight={700}
-            color={theme.text}
-            align="center"
+        <Slide right>
+          <div className="purchase">
+            <Text
+              size={2}
+              weight={900}
+              color={theme.text}
+              align="center"
             >
-            À VISTA!
-          </Text>
+              Única oportunidade de ter acesso ao PRODUTO X
+            </Text>
+            <br />
+            <br />
+
+            <Text
+              size={2}
+              weight={700}
+              color={theme.text}
+              align="center"
+            >
+              <i>R$ 197,00</i> SOMENTE HOJE POR APENAS
+            </Text>
+            <Text
+              size={2.8}
+              weight={900}
+              color={theme.text}
+              align="center"
+            >
+              <strong>9x</strong> de <strong>R$ 8,88</strong>
+            </Text>
+
+            <Text
+              size={2.8}
+              weight={900}
+              color={theme.text}
+              align="center"
+            >
+              ou <strong>R$ 79,90</strong>
+            </Text>
+            <Text
+              size={2}
+              weight={700}
+              color={theme.text}
+              align="center"
+              >
+              À VISTA!
+            </Text>
+            
+            <br />
+            <Button>
+              COMPRAR AGORA!
+            </Button>
+            <br />
+            <img style={{ width: "50%" }} src="https://guiadoscore7dias.com/wp-content/uploads/2020/10/compra-segura-vetor-1-1.png" />
+            {/* <Text className="compraSegura"  size={.8} weight={400} align="center">Compra segura/políticas de privacidade.</Text> */}
           
-          <br />
-          <Button>
-            COMPRAR AGORA
-          </Button>
-          <br />
-          <img className="pagamento" src="https://guiascoremaximo.com/wp-content/uploads/2020/12/compra-segura-meiospagamento.png" />
-          <Text className="compraSegura"  size={.8} weight={400} align="center">Compra segura/políticas de privacidade.</Text>
-        
-        </div>
+          </div>
+        </Slide>
         <br />
 
 
         <div className="warranty">
-          <img 
-            src="https://guiascoremaximo.com/wp-content/uploads/2020/12/selo_versao1_doctor-1-removebg-preview.png" 
-            alt="Ebook Image" 
-          />
-          <div>
+          <Slide bottom>
+            <img 
+              src="https://guiascoremaximo.com/wp-content/uploads/2020/12/selo_versao1_doctor-1-removebg-preview.png" 
+              alt="Ebook Image" 
+            />
+          </Slide>
+          <Slide left>
             <Text size={2} color="#fff" weight={900} align="center">
               VOCÊ NÃO CORRE RISCO ALGUM!
             </Text>
-            <br />
             <Text size={1.3} color="#fff" align="center">
               Nossa missão com esse método é transformar vidas, para que você possa conseguir conquistar tudo o que tem em mente sem se preocupar, com a falta de crédito!
               <br />
               Confiamos tanto em nosso método e no resultado que ele trás que você achar que não valeu apena, devolvemos 100% do seu dinheiro, em até 7 Dias!
             </Text>
-          </div>
+          </Slide>
         </div>
 
+        <Slide bottom>
+          <Timer initialMinute={30} />
+        </Slide>
+        <br />
+        <br />
+        <Slide right>
+          <Button>
+            COMPRAR AGORA!
+          </Button>
+        </Slide>
 
-        <Timer initialMinute={30} />
-
-        <QuestionsFrequent questionsFrequent={questionsFrequent} />
+        <Slide bottom>
+          <QuestionsFrequent questionsFrequent={questionsFrequent} />
+        </Slide>
       </section>
 
       

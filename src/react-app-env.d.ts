@@ -2,4 +2,4 @@
 
 declare module '*.mp4'
 
-declare module 'qier-player'
+declare module 'react-reveal/*'
