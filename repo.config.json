@@ -1,0 +1,9 @@
+{
+  "project_name": "AwsGames",
+  "type": "web",
+  
+  "template_url": "./.github/Screen.png",
+  "logo_url": "./.github/logo.png",
+
+  "web": "./"
+}
