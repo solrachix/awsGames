@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-	<img src="https://github.com/solrachix/awsGames/blob/master/.github/Screen.png?raw=true" />
+<img src="https://github.com/solrachix/awsGames/blob/master/.github/Screen.png?raw=true" />
   <sub>Project for studies. Built with ❤︎ by
     <a href="https://github.com/solrachix">Carlos Miguel</a> and
     <a href="https://github.com/solrachix/awsGames/graphs/contributors">
@@ -53,18 +53,15 @@
 	<img src="https://github.com/solrachix/proffy/blob/master/.github/adornment-1.png?raw=true"
 	width="280px"
 	height="120px"
-	align="right"
-/>
+	align="right" />
 * [License](#closed_book-license)
 
 # :computer: Technologies
 This project was made using the follow technologies:
- <img
-	src="https://github.com/solrachix/Proffy/blob/master/.github/adornment-2.png?raw=true"
+ <img src="https://github.com/solrachix/Proffy/blob/master/.github/adornment-2.png?raw=true"
 	width="280px"
 	height="240px"
-	align="right"
-/>
+	align="right" />
 
 * [keen-slider](https://keen-slider.io/)
 * [Typescript](https://www.typescriptlang.org/)
@@ -75,20 +72,16 @@ This project was made using the follow technologies:
 
 
 # :rocket: Features
- <img
-	src="https://github.com/solrachix/Proffy/blob/master/.github/bolinhas-3.png?raw=true"
+ <img src="https://github.com/solrachix/Proffy/blob/master/.github/bolinhas-3.png?raw=true"
 	width="40px"
 	height="26px"
-	align="center"
-/>
+	align="center"/>
 * Smooth carousel.
 * Custom video player.
- <img
-	src="https://github.com/solrachix/Proffy/blob/master/.github/bolinhas-3.png?raw=true"
+ <img src="https://github.com/solrachix/Proffy/blob/master/.github/bolinhas-3.png?raw=true"
 	width="40px"
 	height="26px"
-	align="right"
-/>
+	align="right" />
 # :construction_worker: How to run
 ```bash
 # Clone Repository
@@ -111,12 +104,10 @@ Go to http://localhost:3000/ to see the result.
 Feel free to **file a new issue** with a respective title and description on the the [awsGames](https://github.com/sorachix/awsGames/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
 # :tada: Contributing
-<img
-	src="https://github.com/solrachix/Proffy/blob/master/.github/adornment-5.png?raw=true"
+<img src="https://github.com/solrachix/Proffy/blob/master/.github/adornment-5.png?raw=true"
 	width="200px"
 	height="160px"
-	align="right"
-/>
+	align="right" />
 Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 # :closed_book: License
